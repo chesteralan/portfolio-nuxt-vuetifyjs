@@ -1,0 +1,133 @@
+[
+    {
+        "title" : "Wordpress",
+        "icon": "mdi-wordpress",
+        "active": false,
+        "route": "",
+        "items":[
+            {
+                "title" : "Themes",
+                "icon": "mdi-wordpress",
+                "active": false,
+                "route": "/wordpress/themes"
+            },
+            {
+                "title" : "Plugins",
+                "icon": "mdi-wordpress",
+                "active": false,
+                "route": "/wordpress/plugins"
+            }
+        ]
+    },
+    {
+        "title" : "Laravel",
+        "icon": "mdi-laravel",
+        "active": false,
+        "route": "",
+        "items":[
+            {
+                "title" : "All Projects",
+                "icon": "mdi-laravel",
+                "active": false,
+                "route": "/laravel"
+            },
+            {
+                "title" : "Completed Projects",
+                "icon": "mdi-laravel",
+                "active": false,
+                "route": "/laravel/completed"
+            },
+            {
+                "title" : "On-going Projects",
+                "icon": "mdi-laravel",
+                "active": false,
+                "route": "/laravel/ongoing"
+            }
+        ]
+    },
+    {
+        "title" : "CodeIgniter",
+        "icon": "mdi-fire",
+        "active": false,
+        "route": "/codeigniter",
+        "items":[
+            {
+                "title" : "All Projects",
+                "icon": "mdi-fire",
+                "active": false,
+                "route": "/codeigniter"
+            },
+            {
+                "title" : "Completed Projects",
+                "icon": "mdi-fire",
+                "active": false,
+                "route": "/codeigniter/completed"
+            },
+            {
+                "title" : "On-going Projects",
+                "icon": "mdi-fire",
+                "active": false,
+                "route": "/codeigniter/ongoing"
+            }
+        ]
+    },
+    {
+        "title" : "VueJs",
+        "icon": "mdi-vuejs",
+        "active": false,
+        "route": "",
+        "items":[
+            {
+                "title" : "VueJs",
+                "icon": "mdi-vuejs",
+                "active": false,
+                "route": "/vuejs",
+                "items":[]
+            },
+            {
+                "title" : "Nuxt",
+                "icon": "mdi-nuxt",
+                "active": false,
+                "route": "/vuejs/nuxt",
+                "items":[]
+            },
+            {
+                "title" : "Vuetify",
+                "icon": "mdi-vuetify",
+                "active": false,
+                "route": "/vuejs/vuetify",
+                "items":[]
+            }
+        ]
+    },
+    {
+        "title" : "Chrome",
+        "icon": "mdi-google-chrome",
+        "active": false,
+        "route": "",
+        "items":[
+            {
+                "title" : "Extensions",
+                "icon": "mdi-google-chrome",
+                "active": false,
+                "route": "/chrome/extensions",
+                "items":[]
+            }
+        ]
+    },
+    {
+        "title" : "Python",
+        "icon": "mdi-language-python",
+        "active": false,
+        "route": "",
+        "items":[
+            {
+                "title" : "Desktop App",
+                "icon": "mdi-language-python",
+                "active": false,
+                "route": "/python/desktop",
+                "items":[]
+            }
+        ]
+    }
+]
