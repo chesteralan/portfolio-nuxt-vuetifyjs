@@ -18,4 +18,6 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Summary", name: summary, widget: text, required: false}
+      - {label: "Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: "#"}
       
