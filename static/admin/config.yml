@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: chesteralan/portfolio-nuxt-vuetifyjs
+
+site_url: https://portfolio.chesteralan.com
+
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "wordpress"
+    label: "Wordpress"
+    folder: "content/wordpress"
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Summary", name: summary, widget: text, required: false}
+      
