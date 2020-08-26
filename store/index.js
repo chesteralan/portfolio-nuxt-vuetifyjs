@@ -6,7 +6,6 @@ export const state = () => ({
   codeigniterItems: [],
   chromeItems: [],
   pythonItems: [],
-  htmlItems: [],
   otherItems: []
 })
 
@@ -52,10 +51,6 @@ export const mutations = {
   setChromeItems (state, list) {
     list.sort(sortByDate)
     state.chromeItems = list
-  },
-  setHtmlItems (state, list) {
-    list.sort(sortByDate)
-    state.htmlItems = list
   },
   setOtherItems (state, list) {
     list.sort(sortByDate)
@@ -126,15 +121,6 @@ export const actions = {
       return res
     })
     await commit('setChromeItems', chromeItems)
-
-    const html = await require.context('~/content/html/', false, /\.md$/)
-    const htmlItems = html.keys().map((key) => {
-      const res = html(key)
-      res.slug = key.slice(2, -3)
-      res.route = '/html/' + res.slug
-      return res
-    })
-    await commit('setHtmlItems', htmlItems)
 
     const others = await require.context('~/content/others/', false, /\.md$/)
     const otherItems = others.keys().map((key) => {

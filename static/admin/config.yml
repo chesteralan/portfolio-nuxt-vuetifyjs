@@ -96,20 +96,6 @@ collections:
       - {label: "Summary", name: summary, widget: text, required: false}
       - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
       - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
-  - name: "html"
-    label: "HTML"
-    folder: "content/html"
-    create: true
-    slug: "{{slug}}"
-    sort: "date:desc"
-    fields:
-      - {label: "Publish Date", name: "date", widget: "date", required: true}
-      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
-      - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: 'Status', name: 'status', widget: 'select', options: ['completed', 'ongoing'], required: true, default: "ongoing"}
-      - {label: "Summary", name: summary, widget: text, required: false}
-      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
-      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
   - name: "others"
     label: "Other Projects"
     folder: "content/others"
@@ -124,3 +110,4 @@ collections:
       - {label: "Summary", name: summary, widget: text, required: false}
       - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
       - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+      - {label: 'Type', name: 'type', widget: 'select', options: ['html', 'php'], required: true, default: "html"}

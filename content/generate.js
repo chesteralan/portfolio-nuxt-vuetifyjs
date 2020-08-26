@@ -55,7 +55,7 @@ writeJsonRoutes('content/laravel/', 'laravel')
 writeJsonRoutes('content/python/', 'python')
 writeJsonRoutes('content/vuejs/', 'vuejs')
 writeJsonRoutes('content/wordpress/', 'wordpress')
-writeJsonRoutes('content/html/', 'html')
+writeJsonRoutes('content/others/', 'others')
 
 const writeAllRoutes = async () => {
   // Order array by date (default asc)
