@@ -9,10 +9,11 @@
     "generate": "node content/generate.js && nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js",
-    "dev2": "concurrently --kill-others \"npx netlify-cms-proxy-server\" \"nuxt\""
+    "dev2": "node content/generate.js && concurrently --kill-others \"npx netlify-cms-proxy-server\" \"nuxt\""
   },
   "dependencies": {
     "@nuxt/content": "^1.5.0",
+    "aos": "^2.3.4",
     "front-matter-markdown": "^0.4.4",
     "frontmatter-markdown-loader": "^3.6.0",
     "nuxt": "^2.14.0"

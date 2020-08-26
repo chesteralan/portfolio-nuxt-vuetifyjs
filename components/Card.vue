@@ -21,6 +21,7 @@
         router
         nuxt
         :href="item.attributes.live_link"
+        target="_blank"
       >
         Demo
       </v-btn>
@@ -32,6 +33,7 @@
         router
         nuxt
         :href="item.attributes.source_link"
+        target="_blank"
       >
         Source
       </v-btn>

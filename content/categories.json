@@ -3,7 +3,7 @@
         "title" : "Wordpress",
         "icon": "mdi-wordpress",
         "active": false,
-        "route": "",
+        "route": "/wordpress",
         "items":[
             {
                 "title" : "Themes",
@@ -23,7 +23,7 @@
         "title" : "Laravel",
         "icon": "mdi-laravel",
         "active": false,
-        "route": "",
+        "route": "/laravel",
         "items":[
             {
                 "title" : "All Projects",
@@ -75,7 +75,7 @@
         "title" : "VueJs",
         "icon": "mdi-vuejs",
         "active": false,
-        "route": "",
+        "route": "/vuejs",
         "items":[
             {
                 "title" : "VueJs",
@@ -104,7 +104,7 @@
         "title" : "Chrome",
         "icon": "mdi-google-chrome",
         "active": false,
-        "route": "",
+        "route": "/chrome",
         "items":[
             {
                 "title" : "Extensions",
@@ -119,7 +119,7 @@
         "title" : "Python",
         "icon": "mdi-language-python",
         "active": false,
-        "route": "",
+        "route": "/python",
         "items":[
             {
                 "title" : "All Projects",
@@ -134,7 +134,7 @@
         "title" : "Others",
         "icon": "mdi-folder-outline",
         "active": false,
-        "route": "",
+        "route": "/others",
         "items":[
             {
                 "title" : "All Projects",

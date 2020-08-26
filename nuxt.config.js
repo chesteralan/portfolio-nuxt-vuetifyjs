@@ -17,7 +17,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    titleTemplate: '%s - Portfolio',
+    titleTemplate: '%s - Chester Alan',
     title: 'Portfolio',
     meta: [
       { charset: 'utf-8' },
@@ -32,13 +32,14 @@ export default {
   ** Global CSS
   */
   css: [
+    'aos/dist/aos.css'
   ],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-
+    { src: '~/plugins/aos.js', ssr: false }
   ],
   /*
   ** Auto import components
