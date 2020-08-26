@@ -1,11 +1,12 @@
 import colors from 'vuetify/es5/util/colors'
+import wordpress from './content/wordpress.json'
 
 export default {
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
@@ -89,6 +90,36 @@ export default {
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
+  /*
+   ** Build configuration
+   */
   build: {
+    /*
+     ** You can extend webpack config here
+     */
+    extend (config, ctx) {
+      // Add this to your build config
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        options: {
+          vue: true
+        }
+      })
+    }
+  },
+
+  generate: {
+    routes () {
+      const r = []
+      r.concat(wordpress.map(wp => `/wordpress/${wp.slug}`))
+      r.concat(wordpress.map(wp => `/laravel/${wp.slug}`))
+      r.concat(wordpress.map(wp => `/codeigniter/${wp.slug}`))
+      r.concat(wordpress.map(wp => `/vuejs/${wp.slug}`))
+      r.concat(wordpress.map(wp => `/chrome/${wp.slug}`))
+      r.concat(wordpress.map(wp => `/python/${wp.slug}`))
+      return r
+    }
   }
+
 }

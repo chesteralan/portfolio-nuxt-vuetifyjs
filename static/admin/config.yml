@@ -1,9 +1,8 @@
 backend:
   name: github
   repo: chesteralan/portfolio-nuxt-vuetifyjs
-
 site_url: https://portfolio.chesteralan.com
-
+local_backend: true
 publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
@@ -16,8 +15,112 @@ collections:
     slug: "{{slug}}"
     sort: "date:desc"
     fields:
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Summary", name: summary, widget: text, required: false}
-      - {label: "Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: "#"}
-      
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
+      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+      - {label: 'Type', name: 'type', widget: 'select', options: ['theme', 'plugin'], required: true, default: "theme"}
+  - name: "laravel"
+    label: "Laravel"
+    folder: "content/laravel"
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: 'Status', name: 'status', widget: 'select', options: ['completed', 'ongoing', 'discontinued'], required: true, default: "ongoing"}
+      - {label: "Summary", name: summary, widget: text, required: false}
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
+      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+  - name: "codeigniter"
+    label: "Codeigniter"
+    folder: "content/codeigniter"
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: 'Status', name: 'status', widget: 'select', options: ['completed', 'ongoing', 'discontinued'], required: true, default: "ongoing"}
+      - {label: "Summary", name: summary, widget: text, required: false}
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
+      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+  - name: "vuejs"
+    label: "VueJS"
+    folder: "content/vuejs"
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: 'Status', name: 'status', widget: 'select', options: ['completed', 'ongoing', 'discontinued'], required: true, default: "ongoing"}
+      - {label: "Summary", name: summary, widget: text, required: false}
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
+      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+      - {label: 'NuxtJs', name: 'nuxtjs', widget: 'boolean', default: false }
+      - {label: 'UI Library', name: 'ui_library', widget: 'select', options: ['none', 'Vuetify', 'Bootstrap Vue', 'Quasar'], required: true, default: "none"}
+  - name: "chrome"
+    label: "Chrome"
+    folder: "content/chrome"
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: 'Type', name: 'type', widget: 'select', options: ['extension','theme'], required: true, default: "extension"}
+      - {label: 'Status', name: 'status', widget: 'select', options: ['completed', 'ongoing', 'discontinued'], required: true, default: "ongoing"}
+      - {label: "Summary", name: summary, widget: text, required: false}
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
+      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+  - name: "python"
+    label: "Python"
+    folder: "content/python"
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: 'Type', name: 'type', widget: 'select', options: ['desktop', 'cli', 'web'], required: true, default: "desktop"}
+      - {label: 'Status', name: 'status', widget: 'select', options: ['completed', 'ongoing', 'discontinued'], required: true, default: "ongoing"}
+      - {label: "Summary", name: summary, widget: text, required: false}
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
+      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+  - name: "html"
+    label: "HTML"
+    folder: "content/html"
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: 'Status', name: 'status', widget: 'select', options: ['completed', 'ongoing'], required: true, default: "ongoing"}
+      - {label: "Summary", name: summary, widget: text, required: false}
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
+      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}
+  - name: "others"
+    label: "Other Projects"
+    folder: "content/others"
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: 'Status', name: 'status', widget: 'select', options: ['completed', 'ongoing'], required: true, default: "ongoing"}
+      - {label: "Summary", name: summary, widget: text, required: false}
+      - {label: "Source Link", name: "source_link", widget: "string", required: false, default: ""}
+      - {label: "Live Link", name: "live_link", widget: "string", required: false, default: ""}

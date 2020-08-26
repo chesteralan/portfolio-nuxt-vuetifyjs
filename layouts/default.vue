@@ -3,6 +3,19 @@
     <v-navigation-drawer v-model="drawer" app light>
       <v-list>
         <v-subheader>Categories</v-subheader>
+        <v-list-item
+          link
+          router
+          nuxt
+          to="/"
+        >
+          <v-list-item-icon>
+            <v-icon>
+              mdi-folder-star-multiple
+            </v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>All Projects</v-list-item-title>
+        </v-list-item>
 
         <v-list-group
           v-for="(category, i) in categories"

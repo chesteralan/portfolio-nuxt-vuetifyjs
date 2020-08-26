@@ -122,10 +122,40 @@
         "route": "",
         "items":[
             {
-                "title" : "Desktop App",
+                "title" : "All Projects",
                 "icon": "mdi-language-python",
                 "active": false,
-                "route": "/python/desktop",
+                "route": "/python",
+                "items":[]
+            }
+        ]
+    },
+    {
+        "title" : "HTML",
+        "icon": "mdi-language-html5",
+        "active": false,
+        "route": "",
+        "items":[
+            {
+                "title" : "All Projects",
+                "icon": "mdi-language-html",
+                "active": false,
+                "route": "/html",
+                "items":[]
+            }
+        ]
+    },
+    {
+        "title" : "Others",
+        "icon": "mdi-folder-outline",
+        "active": false,
+        "route": "",
+        "items":[
+            {
+                "title" : "Other Projects",
+                "icon": "mdi-folder-outline",
+                "active": false,
+                "route": "/others",
                 "items":[]
             }
         ]

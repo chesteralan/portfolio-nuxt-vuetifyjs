@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-layout row>
-      <v-flex v-for="item in laravelItems" :key="item.slug" md4 sm6>
+      <v-flex v-for="item in htmlItems" :key="item.slug" md4 sm6>
         <div class="px-3 pb-3">
           <CardMedia :item="item" />
         </div>
@@ -13,8 +13,8 @@
 <script>
 export default {
   computed: {
-    laravelItems () {
-      return this.$store.state.laravelItems.filter(item => item.attributes.status === 'completed')
+    htmlItems () {
+      return this.$store.state.htmlItems
     }
   }
 }

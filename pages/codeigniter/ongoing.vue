@@ -1,9 +1,21 @@
 <template>
-  <v-layout dark class="black--text">
-    CodeIgniter
-  </v-layout>
+  <v-container>
+    <v-layout row>
+      <v-flex v-for="item in codeigniterItems" :key="item.slug" md4 sm6>
+        <div class="px-3 pb-3">
+          <CardMedia :item="item" />
+        </div>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    codeigniterItems () {
+      return this.$store.state.codeigniterItems.filter(item => item.attributes.status === 'ongoing')
+    }
+  }
+}
 </script>
