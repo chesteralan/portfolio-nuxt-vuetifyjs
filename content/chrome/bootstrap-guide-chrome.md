@@ -1,6 +1,6 @@
 ---
 date: 2020-08-25T20:20:13.578Z
-thumbnail: /images/uploads/image1.jpg
+thumbnail: /images/uploads/bootstrap-guide-chrome-ext.jpg
 title: Bootstrap 3.3.x Offline Guide
 type: extension
 status: ongoing
