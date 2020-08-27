@@ -1,5 +1,6 @@
 ---
 date: 2020-08-27T18:53:45.563Z
+thumbnail: /images/uploads/cag-image1.png
 title: CodeIgniter Admin Generator
 type: desktop
 status: discontinued
