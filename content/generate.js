@@ -8,24 +8,26 @@ const allFiles = []
  * @returns {Array} Array of objects
  */
 const getFiles = (dir, fname) => {
-  const files = fs.readdirSync(dir)
   const filelist = []
 
-  files.forEach((file) => {
-    const markdownFile = fs.readFileSync(`${dir}${file}`, 'utf-8')
-    const fileContents = parseMarkdown(markdownFile)
-    const date = fileContents.date
-    const slug = file
-      .split('.')
-      .slice(0, -1)
-      .join('.')
+  if (fs.existsSync(dir)) {
+    const files = fs.readdirSync(dir)
+    files.forEach((file) => {
+      const markdownFile = fs.readFileSync(`${dir}${file}`, 'utf-8')
+      const fileContents = parseMarkdown(markdownFile)
+      const date = fileContents.date
+      const slug = file
+        .split('.')
+        .slice(0, -1)
+        .join('.')
 
-    const obj = { date, slug }
-    const obj2 = { date, fname, slug }
+      const obj = { date, slug }
+      const obj2 = { date, fname, slug }
 
-    filelist.push(obj)
-    allFiles.push(obj2)
-  })
+      filelist.push(obj)
+      allFiles.push(obj2)
+    })
+  }
   return filelist
 }
 
