@@ -1,6 +1,6 @@
 ---
 date: 2020-08-26T19:14:41.642Z
-thumbnail: /images/uploads/hcc-image1.png
+thumbnail: /images/uploads/ohanas-image-1.png
 title: Ohana's Kitchen
 status: completed
 summary: One page website
