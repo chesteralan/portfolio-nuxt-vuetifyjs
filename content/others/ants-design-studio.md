@@ -1,5 +1,6 @@
 ---
 date: 2020-08-27T17:39:30.366Z
+thumbnail: /images/uploads/antsdesign-image1.png
 title: Ants Design Studio
 status: ongoing
 summary: "Ants Design Studio is the portfolio website of my cousin who is a
