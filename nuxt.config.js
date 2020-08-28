@@ -39,6 +39,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src: '~/plugins/vue-fb-customer-chat.js', ssr: false },
     { src: '~/plugins/aos.js', ssr: false }
   ],
   /*
