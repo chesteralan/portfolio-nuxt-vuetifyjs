@@ -1,11 +1,6 @@
 <template>
-  <v-card
-    class="white"
-  >
-    <v-img
-      height="200px"
-      :src="item.attributes.thumbnail"
-    />
+  <v-card class="white">
+    <v-img height="200px" :src="item.attributes.thumbnail" />
     <v-card-title class="black--text">
       {{ item.attributes.title }}
     </v-card-title>

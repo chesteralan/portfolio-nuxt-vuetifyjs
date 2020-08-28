@@ -19,41 +19,47 @@ export const state = () => ({
 //   return compare
 // }
 
-const sortByDate = (a, b) => {
-  return new Date(b.date) - new Date(a.date)
+const sortByTitle = (a, b) => {
+  const textA = a.attributes.title.toUpperCase()
+  const textB = b.attributes.title.toUpperCase()
+  return (textA < textB) ? -1 : (textA > textB) ? 1 : 0
 }
+
+// const sortByDate = (a, b) => {
+//   return new Date(b.attributes.date) - new Date(a.attributes.date)
+// }
 
 export const mutations = {
   setAllItems (state, list) {
-    list.sort(sortByDate)
+    list.sort(sortByTitle)
     state.allItems = list
   },
   setWordpressItems (state, list) {
-    list.sort(sortByDate)
+    list.sort(sortByTitle)
     state.wordpressItems = list
   },
   setVueItems (state, list) {
-    list.sort(sortByDate)
+    list.sort(sortByTitle)
     state.vueItems = list
   },
   setPythonItems (state, list) {
-    list.sort(sortByDate)
+    list.sort(sortByTitle)
     state.pythonItems = list
   },
   setLaravelItems (state, list) {
-    list.sort(sortByDate)
+    list.sort(sortByTitle)
     state.laravelItems = list
   },
   setCodeigniterItems (state, list) {
-    list.sort(sortByDate)
+    list.sort(sortByTitle)
     state.codeigniterItems = list
   },
   setChromeItems (state, list) {
-    list.sort(sortByDate)
+    list.sort(sortByTitle)
     state.chromeItems = list
   },
   setOtherItems (state, list) {
-    list.sort(sortByDate)
+    list.sort(sortByTitle)
     state.otherItems = list
   }
 }

@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "build": "node content/generate.js && nuxt build",
+    "start": "node content/generate.js && nuxt start",
     "generate": "node content/generate.js && nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js",
-    "dev2": "node content/generate.js && concurrently --kill-others \"npx netlify-cms-proxy-server\" \"nuxt\""
+    "dev": "node content/generate.js && concurrently --kill-others \"npx netlify-cms-proxy-server\" \"nuxt\""
   },
   "dependencies": {
     "@nuxt/content": "^1.5.0",

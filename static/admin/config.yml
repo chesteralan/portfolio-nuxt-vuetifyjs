@@ -2,10 +2,12 @@ backend:
   name: github
   repo: chesteralan/portfolio-nuxt-vuetifyjs
 site_url: https://portfolio.chesteralan.com
+display_url: https://portfolio.chesteralan.com
 local_backend: true
 publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
+show_preview_links: false
 
 collections:
   - name: "wordpress"
