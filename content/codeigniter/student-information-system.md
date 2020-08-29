@@ -1,6 +1,6 @@
 ---
 date: 2020-08-28T16:47:58.499Z
-thumbnail: /images/uploads/codeigniter.jpg
+thumbnail: /images/uploads/sis-ci-image1.png
 title: Student Information System
 status: completed
 summary: "Student Information System is student billing system used by San
