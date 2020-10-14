@@ -1,0 +1,13 @@
+---
+date: 2020-10-14T18:08:41.483Z
+title: Tail Light - Bongo 3
+summary: Tail Light - Bongo 3
+type: exterior
+status: new
+source_link: ""
+live_link: ""
+img_link: https://lh3.googleusercontent.com/fife/ABSRlIpkH0vTh6-qo_GdvTcYWEukhAIJ_y0-iEr_kAg2deATKvJJk6r2jpGwPHwc16at1hLsZH56x8YCMLWSJ9b-ehM1WeR1_gbHHpp0apTStfN0S3HKFWMAleOpyCrFBEhOdgzhGjnc94Scj2usWOn9aHuQdZ_zDHjhriDV3pyKdOcfhnEjp4zwocx5QAYqj-rO7feswrx_uI_yLx9F6GHbxawbfADCTfjn9eWPlYMvQE9aUGKozabRmYd7PCY6t6xEPZZ5G7JKsBwo2JKzNXYAsltKq0tlgc1ps0D6C-qkIsg73cKUOZZHqTkzy8kXLE9VUYvvLO0-iE327pqnBKf-itiE-_HoSDKlrGH9ClsVp9bm-aMYIYR8zdwbgWHmVep0hpVVyXnasQ2cOL5jvrB90sHrJdASkp4xR0b0Wtjy-hREx7KlOOcj3pEjOnL3fFcb37g38cbjHfZtX9jU_CykyIXSNVhJp-js2Jr8BTDbupfDZ0D2G7q31ILylf7zGQfld0UFU5PFfoZ4dO-M3TW073-Qv3mmZIBqmeC4_TCc5HXKzJwtdakZJ0D0I9efCEY5mTfbqLh1VbbMdFpFdKsMAxL3M6YIHC2iE_JFns1LsJbSUBNXDJZ2V3tAfeNi7esB9THxKAsu9_lhc0dtSX-NiHWeZEw7XJZ84NqTyIoJ6OFE3S2LNfQZT1sjxBtSB9_Lb-uBlHUyitnpm-o2PKzm6AppxBiktNJaNA=w795-h666-ft
+img_link2: ""
+img_link3: ""
+img_link4: ""
+---
